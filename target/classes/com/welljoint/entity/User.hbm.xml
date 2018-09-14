@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.welljoint.entity">
+    <class name="User" table="user">
+        <id name="id">
+            <generator class="native"/>
+        </id>
+        <property name="userName" length="32" not-null="true" unique="true"/>
+        <property name="password" length="64" not-null="true"/>
+    </class>
+</hibernate-mapping>
